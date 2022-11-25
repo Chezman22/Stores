@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    display: flex;
+   position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+#menu{
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+}
+
+#logo{
+    margin-right:auto;
+    margin-left: auto;
+    display: block;
+    top: 0px;
+    height: 60px;
+}
+
+#navbar{
+    position: absolute;
+    top: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 2rem 1.5rem;
+    height: 100vh;
+    left: -100%;
+    transition: left ease-in 0.9s;
+
+}
+#navbar.open{
+    left: 0;
+    transition: left ease-in-out 0.9s;
+}
+
+a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 2.5rem
+}
+
+ul>li{
+    list-style: none;
+}
+li :hover{
+    color: rgb(240, 135, 97);
+}
+select{
+    border: none;
+}
+
+#watches{
+   
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#shirt-1{
+    width: 25%;
+    height: 300px;
+    box-shadow: 4px 3px 6px 1px #969696;
+    margin-top: 20px;
+}
+.shirt{
+    max-height: 20%;
+    color: black;
+    padding-top: 10px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+hr{
+    background-color: orangered;
+    margin-top: 30px;
+    height: 2px;
+}
+#shirt-container{
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+}
+#shirt-slide {
+    display: flex;
+    width: 100%;
+    height: 400px
+}
+#shirt-slide img{
+    min-width: 100%;
+    object-fit: cover;
+}
+#prev{
+    font-size: 35px; 
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+#next{
+    font-size: 35px; 
+    position: absolute;
+    top: 50%;
+    right: 20%;
+}
+.shirts{
+    position: relative;
+    top: 2rem;
+}
+
+#watch{
+    position: relative;
+    top: 3.5rem;
+   
+}
+#watch h1{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(12, 12, 12,);
+}
+
+.images{
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(3, 27%);
+    grid-gap: 1rem;
+    justify-content: space-around;
+    
+}
+.shirt-images{
+    width: 60%;
+    margin:auto;
+    position:relative;
+}
+
+.pics{
+    position: relative;
+    
+}
+.shirt-images img{
+    object-fit: cover;
+    margin-left: 1rem;
+   width: 100%;  
+}
+
+.p-el{
+    width: 100%;
+}
+#tshirt{
+    position: relative;
+    top: 3.2rem;
+}
+#tshirt h1{
+    color: rgb(49, 49, 49);
+    text-align: center;
+}
+.shirt-images div  {
+    text-align: center;
+    font-weight: bold;
+}
+.shirt-images div div{
+    display: flex;
+    justify-content: center;
+}
+
+.shirt-images div div p:nth-child(2){
+    text-decoration: line-through  1px;
+    margin-left: 5px;
+    color: gray;
+}
+
+.button-container{
+   position: absolute; 
+   margin-left: 50%;
+    bottom: 13rem;
+    text-align: center;
+}
+
+.increase{
+    float: right;
+}
+
+.images img{
+    object-fit: cover;
+    margin-left: 1rem;
+   width: 95%;
+    height: 17.5rem;
+}
+.images div h1{
+    position: absolute;
+    bottom: 0;
+    left: 1.3rem;
+    color: whitesmoke;
+}
+
+#tshirt{
+    position: relative;
+    top: 3.2rem;
+}
+#tshirt h1{
+    color: rgb(49, 49, 49);
+    text-align: center;
+}
+.images div  {
+    text-align: center;
+    font-weight: bold;
+}
+.images div div{
+    display: flex;
+    justify-content: center;
+}
+
+.images div div p:nth-child(2){
+    text-decoration: line-through  1px;
+    margin-left: 5px;
+    color: gray;
+}
+#more{
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    grid-gap: 2.3rem;
+    display: none;
+}
+#more.open{
+    display: grid;
+    grid-template-columns: repeat(3, 27%);
+    grid-gap: 5rem;
+}
+#more div img{
+    object-fit: cover;
+    width: 95%;
+}
+.soon{
+    font-size: 20px;
+    margin-top: 20px; cursor:pointer;
+    color: orangered;
+    font-weight: bold;
+}
+#swipes{
+    position:relative;
+    top: 3.5rem;
+}
+.container{
+    border: 1px solid black;
+    width: 50%;
+    
+    margin: auto;
+    
+}
+.carousel{
+    display: flex;
+    width: 100%;
+    
+    height: 400px;
+}
+.carousel img{
+    min-width: 90%;
+    height: 100%;
+    
+    object-fit: fill;
+}
+.btn-container{
+    display:flex;
+    justify-content: center;
+}
+.btn-container{
+    font-size: 20px;
+    
+}
+.text{
+    margin-left: 10px; margin-right:10px;
+}
+button{
+    width: 15px;
+    
+}
+.cart{
+    position:relative;
+    top: 1.5rem;
+}
+
+.question{
+    box-shadow: 8px 5px 5px gray;
+    margin:auto;
+    position: relative;
+    top: 3rem;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    padding-bottom: 30px;
+    width: 70%;
+    border: gray solid 1px;
+}
+.answers{
+    display: flex;
+    justify-content: center;
+    top: 20px;
+    position:relative;
+}
+.textbox{
+    border-radius: 6px;
+    border: gray solid 1px;
+    padding: 3px 3px;
+    width:max-content;
+}
+input:focus{
+    border: green solid 1.5px;
+    outline:none;
+}
+.yes{
+    display:none;
+}
+.no{
+    display:none;
+}
+.review{
+    display: none;
+}
+.show .yes{
+    display: inline;
+}
+.showtext .no{
+    display:inline;
+}
+.showtext .review{
+    display: block;
+}
+
+
+@media screen and (max-width: 1500px ) {
+    .shirt-images img{
+        object-fit: contain;
+        margin-left: 1rem;
+       width: 100%;
+      height: 24rem;
+    }  
+}
+
+@media screen and (max-width: 595px){
+    .images{
+        grid-template-columns: repeat(2, 40%);
+    }
+    .shirt-images img{
+        object-fit: fill;
+        margin-left: 1rem;
+       width: 100%;
+    }  
+    #more.open{
+        grid-template-columns: repeat(3, 27%);
+        grid-gap: 3rem;
+    }
+   }
+
+@media screen and (max-width: 414px) {
+    .images{
+        grid-template-columns: 85%;
+    }
+}
+

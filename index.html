@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Yls Watches">
+        <link rel="stylesheet" href="watch.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://kit.fontawesome.com/30dc25a657.js"crossorigin="anonymous"></script>
+        <title>Yls Stores</title>
+    </head>
+    <body>
+<div id="container">
+
+</div>
+        <header>
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <img id="logo" src="./images/yls-logo.png">
+            <nav id="navbar">
+                <ul>
+                <li><a href="https://www.watches.com/" >Watches</a></li>
+                <li><a href="">T-shirts</a></li>
+                <li><a href="">Hoodies</a></li>
+                <li><a href="">Trousers/Shorts</a></li>
+            </ul>
+        </nav>
+        </header>
+
+    <section id="watch">
+        <h1>Popular Brands</h1>
+        <div id="container1">
+        <div class="images">
+            <div class="pics">
+                <img src="./images/rolex.jpg"/>
+                <h1>Rolex</h1>
+            </div>
+            <div class="pics">
+                <img src="./images/hublot.jpg"/>
+                <h1>Hublot</h1>
+            </div>
+            <div class="pics">
+                <img src="./images/casio.jpg"/>
+                <h1 style="color:rgb(31, 30, 30)">Casio</h1>
+            </div>
+            <div class="pics">
+                <img src="./images/gshock.jpg"/>
+                <h1>G-shock</h1>
+            </div>
+            <div class="pics">
+                <img src="./images/tagheuer.jpg"/>
+                <h1>Tag-Heuer</h1>
+            </div>
+            <div class="pics">
+                <img src="./images/hermes.jpg"/>
+                <h1>Hermes</h1>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="tshirt">
+        <h1>T-shirt Sales!</h1>
+        <div class="container1">
+            <div class="shirt-images">
+                 <div class="button-container">
+                <button class="decrease" ><i class="fas fa-chevron-left"></i></button>
+                <button class="increase" ><i class="fas fa-chevron-right"></i></button>
+            </div>
+                <div class="p-el">
+                    <img src="./images/tshirt-5.jpg" alt="" class="img"/>
+                    <p class="name">Yeezus</p>
+                    <div class="div"><p>#7000</p><p>#8000</p></div>
+                </div>
+                
+            </div>
+           
+            </div>
+            <!--
+            <p class="soon" >Coming soon...</p>
+            
+        .button-container{
+    position:relative;
+    top: -2rem;
+    bottom: 2rem;
+    text-align: center;
+}
+.increase{
+    margin-left: 50%;
+}
+
+        <div id="more">
+            <div>
+                <img src="./images/caps.jpg"/>
+                <p class="p-el">Caps</p>
+            </div>
+            <div>
+                <img src="./images/cargos.jpg"/>
+                <p class="p-el">Cargo Pants</p>
+            </div>
+            <div>
+                <img src="./images/hoodie.jpg" />
+                <p class="p-el">Hoodies</p>
+            </div>
+            <div>
+                <img src="./images/pants.jpg" />
+                <p class="p-el">Shorts</p>
+            </div>
+            <div>
+                <img src="./images/socks.jpg" />
+                <p class="p-el">Socks</p>
+            </div>
+.
+        </div>
+    </section>
+
+    <section id="swipes" style="display:none;">
+        <div class="container">
+            <div class="carousel">
+                <div>
+                    <img src="./images/caps.jpg"/>
+                </div>
+                <div>
+                    <img src="./images/pants.jpg"/>
+                </div>
+                <div>
+                    <img src="./images/socks.jpg" id='last' />
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <div class="cart" >
+        <h3 style=" text-align: center;">item no.</h4>
+        <div class="btn-container" >
+            <button type="button" class="minus-btn" >-</button>
+            <h3 class="text" >0</h3>
+            <button type="button" class="plus-btn">+</button>
+        </div>
+    </div>
+
+    <div class="question">
+        <h4 >Do you like any of our products?</h4>
+        <div class="answers ">
+            <div class="yes-div">
+                <button class="yes-ans" style="width:30px">Yes</button>
+                <span class="yes"><i class="fa-solid fa-check" style="color:green"></i></span>
+            </div>
+            <div class="no-div " style="margin-left:20px">
+                <button class="no-ans" style="width:30px">No</button>
+                <span class="no"><i class="fa-solid fa-xmark" style="color:red;"></i></span>
+            </div>
+        </div>
+        <form action="" style="position:relative; top:20px" class="review">
+            <label for="reason">Why?</label><br>
+            <input type="text" name="reason" class="textbox">
+        </form>
+    </div>
+
+    <script src="watch.js"></script>
+</body>
+</html>
